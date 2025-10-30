@@ -18,6 +18,14 @@ pub mod asset {
         msg!("Greetings from: {:?}", ctx.program_id);
         Ok(())
     }
+
+    /// Tạo token mới với mint account và metadata
+    pub fn create_token(
+        ctx: Context<CreateToken>,
+        params: TokenInitParams,
+    ) -> Result<()> {
+        instructions::create_token(ctx, params)
+    }
 }
 
 #[derive(Accounts)]
