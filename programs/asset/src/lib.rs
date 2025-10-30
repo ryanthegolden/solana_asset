@@ -1,5 +1,13 @@
 use anchor_lang::prelude::*;
 
+// Import modules
+pub mod instructions;
+pub mod state;
+
+// Re-export for easier access
+pub use instructions::*;
+pub use state::*;
+
 declare_id!("CsgfQjdQEoVHUFUfbzjqoetNFWjemSNKr4Wd7mJpeNaH");
 
 #[program]

@@ -48,7 +48,7 @@ solana airdrop 5
 
 #### Bước 1.3: Triển khai SPL Token Program
 
-- [ ] Tạo struct `TokenManager` để quản lý thông tin token
+- [x] Tạo struct `TokenManager` để quản lý thông tin token
 - [ ] Implement instruction `create_token`:
   - Tạo mint account
   - Thiết lập metadata (tên, symbol, decimals)
